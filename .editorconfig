@@ -1,0 +1,12 @@
+# .editorconfig
+root = true
+
+# Backend: Python — 4 пробела
+[backend/**/*.py]
+indent_style = space
+indent_size = 4
+
+# Frontend: TS, JS — 2 пробела
+[frontend/**/*.{ts,tsx,js,jsx,json}]
+indent_style = space
+indent_size = 2
