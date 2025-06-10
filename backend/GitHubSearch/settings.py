@@ -128,7 +128,7 @@ drf_yasg_settings = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': f"redis://{os.getenv('REDIS_HOST')}:{os.getenv('REDIS_PORT')}/1",
+        'LOCATION': f"rediss://{os.getenv('REDIS_HOST')}:{os.getenv('REDIS_PORT')}/1",
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
             "CONNECTION_POOL_KWARGS": {
