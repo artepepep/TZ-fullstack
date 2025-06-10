@@ -41,7 +41,7 @@ const RepositoriesTab: React.FC = () => {
             href={item.html_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 underline"
+            className="text-gray-500 hover:text-black no-underline text-sm transition-colors duration-200"
           >
             View on GitHub
           </a>
