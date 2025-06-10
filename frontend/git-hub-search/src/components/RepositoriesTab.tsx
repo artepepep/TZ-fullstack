@@ -32,10 +32,10 @@ const RepositoriesTab: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col gap-4 w-full max-w-xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl">
       {data.map((item, idx) => (
         <div key={idx} className="border p-4 rounded shadow bg-white">
-          <p className="font-semibold text-lg">{item.full_name}</p>
+          <p className="font-semibold text-lg break-words">{item.full_name}</p>
           <p className="text-gray-600">Owner: {item.owner.login}</p>
           <a
             href={item.html_url}
