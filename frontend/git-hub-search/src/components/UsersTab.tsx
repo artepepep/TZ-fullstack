@@ -31,14 +31,15 @@ const UsersTab: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col gap-4 w-full max-w-xl">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl">
       {data.map((item, index) => (
         <div key={index} className="border p-4 rounded shadow bg-white">
           <div className="flex items-center gap-4">
             <img src={item.avatar_url} alt='' className="w-12 h-12 rounded-full" />
             <div>
-              <p className="font-semibold">{item.login}</p>
+              <p className="font-semibold break-words">{item.login}</p>
               <p className="text-sm text-gray-500">ID: {item.id}</p>
+              <a href={item.html_url} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-black no-underline text-sm transition-colors duration-200">View Profile</a>
             </div>
           </div>
         </div>
